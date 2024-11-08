@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 1px solid #000;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        .header {
+            text-align: center;
+            font-weight: bold;
+        }
+        img {
+            width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .input-row {
+            margin-bottom: 5px;
+        }
+        .actions {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+
+<table>
+    <!-- 表格標題 -->
+    <tr>
+        <th colspan="3" class="header">About -- 113306077</th>
+    </tr>
+    <!-- 第一行，個人照片和姓名 -->
+    <tr>
+        <!-- 左邊顯示個人照片 -->
+        <td rowspan="4" style="text-align: center;">
+            <img src="ssc.jpg" alt="personal photo">
+            <p>personal photo</p>
+        </td>
+        <!-- 右邊顯示姓名 -->
+        <td colspan="2">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" style="width: 80%;">
+        </td>
+    </tr>
+    <!-- 第二行，性別 -->
+    <tr>
+        <td colspan="2">
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </td>
+    </tr>
+    <!-- 第三行，縣市和生日 -->
+    <tr>
+        <td>
+            <label for="county">County:</label>
+            <select id="county" name="county">
+                <option value="taipei">Taipei</option>
+                <option value="tainan">Tainan</option>
+                <option value="taichung">Taichung</option>
+                <option value="taoyuan">Taoyuan</option>
+            </select>
+        </td>
+        <td>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+        </td>
+    </tr>
+    <!-- 第四行，電子郵件 -->
+    <tr>
+        <td colspan="2">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" style="width: 90%;">
+        </td>
+    </tr>
+    <!-- 第五行，興趣 -->
+    <tr>
+        <td>Hobby</td>
+        <td colspan="2">
+            <input type="checkbox" name="hobby" value="swimming"> Swimming
+            <input type="checkbox" name="hobby" value="volleyball"> Volleyball
+            <input type="checkbox" name="hobby" value="movie"> Movie
+            <input type="checkbox" name="hobby" value="game"> Game
+            <input type="checkbox" name="hobby" value="sleep"> Sleep
+        </td>
+    </tr>
+    <!-- 第六行，技能 -->
+    <tr>
+        <td>Skill</td>
+        <td colspan="2">
+            <input type="checkbox" name="skill" value="java"> Java
+            <input type="checkbox" name="skill" value="html"> HTML
+            <input type="checkbox" name="skill" value="python"> Python
+            <input type="checkbox" name="skill" value="office"> Microsoft Office
+            <input type="checkbox" name="skill" value="premiere"> Premiere
+        </td>
+    </tr>
+    <!-- 第七行，留言 -->
+    <tr>
+        <td>Say Something</td>
+        <td colspan="2">
+            <textarea rows="3" style="width: 100%;" placeholder="Say something here."></textarea>
+        </td>
+    </tr>
+    <!-- 最後一行，提交與重設按鈕 -->
+    <tr>
+        <td colspan="3">
+            <button type="submit">提交</button>
+            <button type="reset">重設</button>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
